@@ -26,6 +26,14 @@ public class Example {
 		return "Example [subject=" + subject + "]";
 	}
 
+	//https://www.baeldung.com/spring-postconstruct-predestroy
+	//add this following code in pom.xml
+//	<dependency>
+//	    <groupId>javax.annotation</groupId>
+//	    <artifactId>javax.annotation-api</artifactId>
+//	    <version>1.3.2</version>
+//	</dependency>
+	
 	@PostConstruct
 	public void start() {
 		System.out.println("starting method");
